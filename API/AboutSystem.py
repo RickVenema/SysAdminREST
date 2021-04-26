@@ -69,7 +69,3 @@ class AboutSystem:
     @staticmethod
     def get_cpu_usage():
         return psutil.cpu_percent(interval=0.5)
-
-
-if __name__ == '__main__':
-    print(AboutSystem._get_cpu_freq())

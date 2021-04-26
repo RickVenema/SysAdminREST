@@ -1,5 +1,6 @@
 import flask
 from API.AboutSystem import AboutSystem
+from API.Docker import Docker
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -31,6 +32,13 @@ class API:
     @app.route('/api/mem_usage', methods=['GET'])
     def api_mem_usage():
         return {"cpu_usage": AboutSystem.get_mem_usage()}
+
+
+class DockerAPI:
+    @staticmethod
+    @app.route('/api/list_images', methods=['GET'])
+    def api_list_images():
+        return {"docker images": Docker.get_docker_images()}
 
 
 app.run()
