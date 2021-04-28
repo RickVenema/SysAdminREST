@@ -34,6 +34,7 @@ class TestAboutSystem(TestCase):
     &#34;&#34;&#34;
     This test class is used for the test cases for the AboutSystem class.
     &#34;&#34;&#34;
+
     def test_get_processor_info(self):
         assert AboutSystem._get_processor_info() == &#34;Intel64 Family 6 Model 165 Stepping 2, GenuineIntel&#34;
 
@@ -43,6 +44,7 @@ class TestAboutSystem(TestCase):
     def test_get_total_info(self):
         assert AboutSystem.get_total_info() == {
             &#34;CPU Count&#34;: 8,
+            &#34;CPU frequency&#34;: 2496.0,
             &#34;Amount of ram&#34;: 31.79058074951172,
             &#34;Processor information&#34;: &#34;Intel64 Family 6 Model 165 Stepping 2, GenuineIntel&#34;
         }
@@ -83,6 +85,7 @@ not have a method with the specified name.</p></div>
     &#34;&#34;&#34;
     This test class is used for the test cases for the AboutSystem class.
     &#34;&#34;&#34;
+
     def test_get_processor_info(self):
         assert AboutSystem._get_processor_info() == &#34;Intel64 Family 6 Model 165 Stepping 2, GenuineIntel&#34;
 
@@ -92,6 +95,7 @@ not have a method with the specified name.</p></div>
     def test_get_total_info(self):
         assert AboutSystem.get_total_info() == {
             &#34;CPU Count&#34;: 8,
+            &#34;CPU frequency&#34;: 2496.0,
             &#34;Amount of ram&#34;: 31.79058074951172,
             &#34;Processor information&#34;: &#34;Intel64 Family 6 Model 165 Stepping 2, GenuineIntel&#34;
         }
@@ -188,6 +192,7 @@ not have a method with the specified name.</p></div>
 <pre><code class="python">def test_get_total_info(self):
     assert AboutSystem.get_total_info() == {
         &#34;CPU Count&#34;: 8,
+        &#34;CPU frequency&#34;: 2496.0,
         &#34;Amount of ram&#34;: 31.79058074951172,
         &#34;Processor information&#34;: &#34;Intel64 Family 6 Model 165 Stepping 2, GenuineIntel&#34;
     }</code></pre>
