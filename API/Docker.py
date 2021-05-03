@@ -10,9 +10,9 @@ class Docker:
         return output
 
     @staticmethod
-    def pull_docker_image():
+    def pull_docker_image(image_name):
         pass
 
     @staticmethod
-    def run_docker_image():
+    def run_docker_image(image_name):
         pass
